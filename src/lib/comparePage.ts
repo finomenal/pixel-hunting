@@ -37,7 +37,7 @@ const comparePage = async ({
 
 		const full = new PNG({ width: width * 3, height: pageHeight });
 		const fullCorrect = PNG.sync.write(full);
-		const diffFileFolder = path.join(process.cwd(), 'regressor');
+		const diffFileFolder = path.join(process.cwd(), 'pixel-hunting');
 		writeMessage('90%');
 
 		if (!fs.existsSync(diffFileFolder)) fs.mkdirSync(diffFileFolder, { recursive: true });
