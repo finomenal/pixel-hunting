@@ -1,0 +1,10 @@
+# build
+build
+*.tgz
+
+# packages
+node_modules
+yarn-error.log
+
+# config
+config.local.json
