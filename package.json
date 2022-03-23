@@ -1,21 +1,21 @@
 {
   "name": "pixel-hunting",
-  "description": "",
+  "description": "Utility to compare pages between two stages",
   "author": {
     "name": "Aleksandr Savelyev <vordgi>"
   },
   "version": "1.0.0",
   "main": "./build/index.js",
-  "bin": "./build/index.js",
+  "bin": {
+    "pixel-hunting": "./build/index.js",
+    "ph": "./build/index.js"
+  },
   "files": [
     "build"
   ],
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc --build",
-    "prepack": "yarn build",
-    "postpack": "npm i pixel-hunting.tgz -g",
-    "package": "yarn pack --filename pixel-hunting.tgz",
     "lint": "eslint src/**/*.ts"
   },
   "license": "MIT",
